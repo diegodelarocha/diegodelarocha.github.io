@@ -1,0 +1,1352 @@
+@charset "utf-8";
+/* CSS Document */
+/*--------------------------------------------------------------*/
+/*--------------------------GLOBAL------------------------------*/
+/*--------------------------------------------------------------*/
+*{
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	text-decoration: none !important;
+}
+
+html{
+	font-family: 'Noto Sans', sans-serif;
+}
+.colorWrapper{
+	background-color: rgba(175,175,175,0.125);
+}
+.index_wrapper{
+	width: 90%;
+	margin: 0 auto;
+}
+.wrapper{
+	width: 90%;	
+	margin: 0 auto;
+}
+.index_wrapper-penguin{
+	width: 100%;
+	margin: 0 auto;
+}
+
+	/*------------------------TEXT STYLING----------------------------*/
+/*	main titles*/
+	h1 {
+		font-size: 1.25em;
+		color: #00bfdd;
+		font-weight: bold;
+		text-align: center;
+		text-transform: uppercase;
+/*		color: #ed1970;*/
+	}
+/*	subtitles*/
+	h2 {
+		font-size: 1em;
+		color: #00bfdd;
+		font-weight: bold;
+		text-align: center;
+		text-transform: uppercase;
+	}
+	p {
+		font-size: 1em;
+		color: #2d2d2d;
+		font-weight: normal;
+	}
+	b{
+		color: #00bfdd;
+	}
+	ul{
+		list-style-type: none;
+		text-decoration: none;
+	}
+	.center {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 50%;
+	}
+	.centerFont{
+		text-align: center;
+	}
+	.linkTextAll{
+		color: #ed1970;
+		font-weight: bold;
+	}
+
+/*--------------------------------------------------------------------------*/
+/*-------------------------INDEX PAGE---------------------------------------*/
+/*--------------------------------------------------------------------------*/
+
+
+	/*--------------------------------------------------------------*/
+	/*----------------------------NAV-------------------------------*/
+	/*--------------------------------------------------------------*/
+
+	nav{
+		z-index: 2; 
+		position: fixed; /* Set the navbar to fixed position */
+		top: 0; /* Position the navbar at the top of the page */
+		width: 100%; /* Full width */
+	}
+	.navRectangle {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		background-color:#00bfdd;
+		width: 100%;
+		height:50px;
+	}
+
+	.navText{
+	/*	font-family: 'Open Sans', sans-serif;*/
+		float:right;
+		display: block;
+		color:rgba(255,255,255,.75);
+		text-align: center;
+		padding: 18px 16px;
+		text-decoration: none;
+		font-weight: bold;
+		font-size: .66em;
+	}
+
+	.navActive{
+		color:rgba(255,255,255,1);
+	}
+
+	.navText:hover:not(.target) {
+		background-color: #ed1970;
+/*		font-size: .7em;*/
+		color:rgba(255,255,255,1);
+		
+	}
+
+	.navText:target {
+		background-color:#27A249;
+
+	}
+
+	nav ol li a img{
+
+		width: 50px;
+		height: 50px;
+		vertical-align: middle;
+		margin-left: 5%;
+		float: left;
+	}
+	.icon{
+	/*	float:left;*/
+		display: block;
+		color: white;
+		text-decoration: none;
+	}
+	/*--------------------------------------------------------------*/
+	/*-------------------------HEADER TEXT--------------------------*/
+	/*--------------------------------------------------------------*/
+
+	.mainTitle{
+		margin-bottom: 15px;
+		margin-top: 50px;
+		padding-top: 15px
+	}
+	.description{
+		text-align: center;
+		margin-bottom: 30px;
+		margin-top: 0px;
+		padding-top: 0px;
+		margin-left: 5%;
+		margin-right: 5%; 
+	}
+	/*--------------------------------------------------------------*/
+	/*------------------------DEMO REEL VIDEO-=---------------------*/
+	/*--------------------------------------------------------------*/
+	.demoreel-video{
+		box-shadow: 0 3px 6px 0 rgba(175,175,175,0.7);
+	}
+	.embed-container { 
+		position: relative;
+		padding-bottom: 56.25%;
+		height: 0;
+		overflow: hidden;
+		max-width: 100%;
+		} 
+	.embed-container iframe, .embed-container object, .embed-container embed {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+	.vid-diffRatio{
+		padding-bottom: 100%;
+	}
+	.vid-diffRatio-stickerPack{
+		padding-bottom: 150%;
+	}
+	.vid-diffRatio-ribbit{
+			padding-bottom: 66.45%;
+	}
+	.vid-diffRatio-turk{
+			padding-bottom: 100%;
+	}
+
+
+	/*--------------------------------------------------------------*/
+	/*----------------------------PORTOFLIO-------------------------*/
+	/*--------------------------------------------------------------*/
+		#portfolio{
+		margin-top: -50px;
+		padding-top: 50px;
+		font-size: 1px;
+		}
+		/*--------------------------FILTER TEXT-------------------------*/
+		.filterText {
+			margin: 30px 0;
+			text-align: center;
+			cursor: pointer;
+		}
+		.category_item{
+			text-decoration: none;
+			font-weight: bold;
+			font-size: .67em;
+			color: rgba(175,175,175,.75);
+			margin: 0 1px;
+		}
+
+		.category_item:hover, .active{
+			color:#ed1970;
+			font-weight:bold;
+		}
+		/*--------------------------PORTFOLIO GRID-------------------------*/
+		.portfolioWrapper{
+			box-sizing: border-box;
+		}
+		.grid {
+			margin: 0 auto;
+		}
+		/* Add padding BETWEEN each column (if you want) */
+		.grid,
+		.grid > .column {
+			padding: 1.5% 1.5%;
+		}
+		/* Clear floats after rows */ 
+		.grid:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+		.column {
+			float: left;
+			width: 47%;
+			height: auto;
+			display: none; /* Hide columns by default */
+			position: relative;	
+		}
+
+		/*--------------------------PORTFOLIO CONTENT----------------------*/
+		.portfolio_container{
+		/*	position: relative;*/
+			width: 50%;
+		}
+
+		.portfolio {
+			display: block;
+			width: 100%;
+			height: auto;
+			position: relative;
+		}
+
+		/*So for this overlay to have the same size as the portfolio image, need to check (.column width %)*2 and padding from (.grid, .grid>.column)*2, and together they need to give you 100%, then you do the same on the percentages on width and margin of this one  */
+
+		.overlay{
+			position:absolute;
+			display:block;
+			opacity: 0;
+			width: 94%;
+			height: auto;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			margin: 3% auto;
+			padding: 0;
+			transition: all 0.2s ease-in-out;
+			background-color:rgba(237,25,112,1);
+
+		}
+		.potfolio_container:active .overlay{
+			opacity: 1;
+			transform: scale(.97);
+			box-shadow: 0 3px 6px 0 rgba(175,175,175,0.45);
+
+		}
+
+		.portfolio_container:hover .overlay{
+			opacity: 1;
+			transform: scale(1.02);
+			box-shadow: 0 3px 6px 0 rgba(175,175,175,0.75);
+		}
+
+		.portfolio_text{
+			color: white;
+			font-weight: bold;
+			font-size: 1em;
+			position:absolute;
+			top: 50%;
+			left:50%;
+			transform: translate(-50%, -50%);
+		/*	text-emphasis-position: translate(-50%, -50%);*/
+			text-align: center;
+		}
+		.longText{
+			font-size: .66em;
+
+		}
+		/* The "show" class is added to the filtered elements */
+		.show {
+			display: block;
+		}
+
+	/*--------------------------------------------------------------*/
+	/*----------------------------ABOUT-----------------------------*/
+	/*--------------------------------------------------------------*/
+	#about{
+		margin-top: -50px;
+		padding-top: 50px;
+		font-size: 1px;
+	}
+	.about {
+		box-sizing: inherit;
+		background-color: #ffffff;
+		z-index: 3; 
+		display: grid;
+		grid-template-columns: 100% 0%;
+	}
+	.aboutText{
+		margin: 5% 5% 0 5%;
+		top: 50%;
+		text-align: center;
+	}
+	.aboutImgMobile{
+		background-image: url("images/index/about.jpg");
+		height: 200px;
+		width: auto;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		position: relative;
+		display: block;
+	}
+	.aboutImg{
+		background-image: url("images/index/about.jpg");
+		height: 100%;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		position: relative;
+		grid-column: 2;
+		display: none;
+	}
+	/* Style the buttons */
+	.btn {
+		top: 50%;
+		display:table;
+		box-sizing: border-box;
+		outline: none;
+		padding: 10px 30px;
+		border: 2.5px solid #ED1970;
+		cursor: pointer;
+		color:#ed1970;
+		font-weight: bold;
+		border-radius: 8px;
+		font-size: .8em;
+		position: relative;
+		grid-column: 1;
+		margin: 5% auto;
+		background-color:rgba(0,0,0,0.00);	
+	}
+	/* Add a grey background color on mouse-over */
+	.btn:hover {
+		background-color: #ed1970;
+		color: #ffffff;
+	/*	transform: scale(1.05);*/
+	}
+
+	/* Add a dark background color to the active button */
+	.btn:active {
+		background-color: #ed1970;
+		color: white;
+	/*	transform: scale(.95);*/
+	}
+
+
+	/*--------------------------------------------------------------*/
+	/*----------------------------FOOTER----------------------------*/
+	/*--------------------------------------------------------------*/
+	
+	footer{
+		margin: 0 auto;
+		width: 100%;
+		padding: 30px 0;
+		background-color: #00bfdd;
+		z-index: -2; 
+		box-shadow: inset 0 3px 6px 0 rgba(0,0,0,.15);
+	}
+	
+	.socialMediaIcons{
+		text-align: center;
+			margin: 0 0 15px 0;
+	}
+	.socialMediaIcons a{
+		text-decoration: none;
+	}
+	.SocialIcon{
+		color:rgba(255,255,255,1);
+		font-size: 1.8em;
+	}
+
+	/* mouse over link */
+	.SocialIcon:hover {
+		transform: scale(1.1);
+	}
+
+	/* selected link */
+	.SocialIcon:active {
+		transform: scale(.95);
+	}
+	.footerText {
+	/*	font-family: 'Open Sans', sans-serif;*/
+		color: #ffffff;
+		text-align: center;
+		font-weight: lighter;
+		box-sizing: border-box;
+		padding: 0;
+	}
+	.footerText b{
+		color: white;
+	}
+
+	.footerText a{
+		color: #ffffff;
+		text-decoration: none;
+		font-weight: bold;
+		font-size:.75em;
+	}
+	.textStyleFooter{
+		font-size: .75em;
+		text-decoration: none;
+	}
+	.paddingFooter{
+		padding-top: 4px;
+	}
+
+	.linkText:hover{
+		font-size: .8em;
+	}
+	.linkText:active{
+		font-size: .70em;
+	}
+	
+
+
+
+/*--------------------------------------------------------------------------*/
+/*--------------------------TEMPLATE AND TO THIS DAY PAGE-------------------------*/
+/*--------------------------------------------------------------------------*/
+	/*------------------------------------------------------------------*/
+	/*----------------------------NAV TITLE-----------------------------*/
+	/*------------------------------------------------------------------*/
+
+	.navTitleRextangle{
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		background-color:#00bfdd;
+		width: 100%;
+		height:50px;
+	}
+
+	/*--------------------------------------------------------------*/
+	/*-------------------------HEADER TEXT--------------------------*/
+	/*--------------------------------------------------------------*/
+	.mainTitle{
+		margin-top: 50px;
+		padding-top: 15px;
+		text-align: center;
+	}
+	
+	/*------------------------------------------------------------------*/
+	/*----------------------------SLIDESHOW1-----------------------------*/
+	/*------------------------------------------------------------------*/
+
+		/* Position the image container (needed to position the left and right arrows) */
+		.slides_container {
+			margin-top: 30px;
+			position: relative;
+			box-sizing: border-box;
+		}
+		.mySlides1 img {
+			vertical-align: middle;
+		}
+		/* Hide the images by default */
+		.mySlides1 {
+			display: none;
+		}
+
+		/* Add a pointer when hovering over the thumbnail images */
+		.cursor {
+			cursor: pointer;
+		}
+
+		/* Next & previous buttons */
+		.prev,
+		.next {
+			cursor: pointer;
+			position: absolute;
+			top: 50%;
+			width: auto;
+			padding: 16px;
+			margin-top: -50px;
+			color: white;
+			font-weight: bold;
+			font-size: 20px;
+			background-color: rgba(0,0,0,.50);
+			user-select: none;
+			-webkit-user-select: none;
+		}
+		.prev{
+			border-radius: 0 8px 8px 0;
+		}
+		.next{
+			border-radius: 8px 0 0 8px;
+		}
+		/* Position the "next button" to the right */
+		.next {
+			right: 0;
+		}
+
+		/* On hover, add a black background color with a little bit see-through */
+		.prev:hover,
+		.next:hover {
+			background-color: rgba(237,25,112,1);
+		}
+		.prev:active,
+		.next:active {
+			background-color: rgba(237,25,112,1);
+		}
+
+		/* Number text (1/3 etc) */
+		.numbertext {
+			color: white;
+			font-size: 1em;
+			font-weight: bold;
+			padding: 8px 12px;
+			position: absolute;
+			top: 0;
+			background-color: rgba(0,0,0,.50);
+			border-radius: 0px;
+		}
+
+		/* Container for image text */
+		.caption-container {
+			text-align: center;
+			background-color:#ed1970;
+			padding: 2% 2%;
+		}
+		#caption1 {
+			color: white;
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+
+
+	/*----------------------------THUMBNAILS----------------------------*/
+		.slide_demo1{
+			display: none;
+			vertical-align: middle;
+		}
+
+/*	This is If need thumbnails on the slideshows at some point*/
+/*
+		.slide_row:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+*/
+		/* Six columns side by side */
+/*
+		.slide_column {
+			float: left;
+			width: 16.66%;
+		}
+*/
+
+		/* Add a transparency effect for thumnbail images */
+/*
+		.demo {
+			opacity: 0.6;
+		}
+
+		.active,
+		.demo:hover {
+			opacity: 1;
+		}
+*/
+
+	/*------------------------------------------------------------------*/
+	/*----------------------------PROCESS 01----------------------------*/
+	/*------------------------------------------------------------------*/
+
+		#process{
+		margin-top: -50px;
+		padding-top: 50px;
+		font-size: 1px;
+		}
+		.process_column{
+			column-count: 1;
+			column-width: 300px;
+		}
+		.portfolio_headers{
+			margin-bottom: 15px;
+		}
+
+		.description_process{
+		text-align: center;
+		margin-bottom: 30px;
+		margin-top: 0px;
+		padding-top: 0px;
+/*
+		margin-left: 5%;
+		margin-right: 5%; 
+*/
+	}
+
+		
+		.process-video{
+		width: 100%;
+		height: auto;
+		position: relative;
+		margin: auto;
+}
+		.pic_process{
+			width: 100%;
+			height: auto;
+		}
+	/*------------------------------------------------------------------*/
+	/*------------------------------STILLS------------------------------*/
+	/*------------------------------------------------------------------*/
+	.stills_header{
+		margin-top: 15px;
+	}
+	.myAutoSlides1{
+		object-fit: cover;
+/*		height: 270px;*/
+	}
+	/*------------------------------------------------------------------*/
+	/*----------------------------CREDITS/SPECIAL THANKS----------------*/
+	/*------------------------------------------------------------------*/
+
+		#credits{
+		margin-top: -50px;
+		padding-top: 50px;
+		font-size: 1px;
+		}
+	/*----------------------------FESTIVALS + AWARDS--------------------*/
+		.festival_column{
+			column-count: 3;
+			column-width: 400px;
+/*			margin: 0 5%;*/
+		}
+
+
+		.festivalsTitle{
+			text-align: center;
+			margin: 1% 5%;
+
+		}
+
+		
+		.festivals{
+			text-align: left;
+			text-decoration: none;
+		}
+		.festivalText{
+			display: inline;
+/*			text-transform: uppercase;*/
+			color: #00bfdd;
+			color:#afafaf;
+/*			font-weight: bold;*/
+			font-size: .8em;
+		}
+		.festivalLink{
+			color:#afafaf;
+			text-transform: uppercase;
+			font-weight: bold;
+			font-size: .8em;
+		}
+		.festivalLink:hover{
+			color: #ED1970;
+			font-weight: bold;
+			font-size: .85em;
+		}
+		.festivalLink:active{
+			color:#ed1970;
+			font-size: .78em;
+		}
+
+	/*----------------------------CREDITS---------------------------------*/
+		.creditsTitle{
+			text-align: center;
+			margin: 15px 5%;
+		}
+		.offsetFix{
+			margin-top: -0px; /* This fixes the offset created by &nbsp for the bookmark */
+		}
+
+		.credits_column{
+			column-count: 3;
+			column-width: 200px;
+/*			margin: 0 5%;*/
+		}
+
+		.credits{
+			text-align:left;
+			text-decoration: none;
+/*			margin: 0 5%;*/
+			display: grid;
+		}
+		.creditText{
+			display: inline;
+			text-transform: uppercase;
+			color: #00bfdd;
+			color:#afafaf;
+			font-weight: bold;
+			font-size: .8em;
+		}
+		.creditLink{
+/*			text-transform: uppercase;*/
+/*			font-weight: bold;*/
+			color:#afafaf;
+			font-size: .8em;
+		}
+		.creditLink:hover{
+			color: #ED1970;
+			font-weight: bold;
+/*			font-size: .85em;*/
+		}
+		.creditLink:active{
+			color:#ed1970;
+			font-size: .78em;
+		}
+
+	/*----------------------------BACK BUTTON---------------------------------*/
+
+	/* Style the buttons */
+		.btnBack {
+			top: 50%;
+			display:table;
+			box-sizing: border-box;
+			outline: none;
+			padding: 10px 30px;
+			border: 2.5px solid #ED1970;
+			cursor: pointer;
+			color:#ed1970;
+			font-weight: bold;
+			border-radius: 8px;
+			font-size: .8em;
+			position: relative;
+			grid-column: 1;
+			margin: 30px auto;
+			background-color:rgba(0,0,0,0.00);	
+		}
+		/* Add a grey background color on mouse-over */
+		.btnBack:hover {
+			background-color: #ed1970;
+			color: #ffffff;
+		/*	transform: scale(1.05);*/
+		}
+
+		/* Add a dark background color to the active button */
+		.btnBack:active {
+			background-color: #ed1970;
+			color: white;
+		/*	transform: scale(.95);*/
+		}
+
+/*--------------------------------------------------------------------------*/
+/*----------------------------THINK BRILLIANCE PAGE-------------------------*/
+/*--------------------------------------------------------------------------*/
+
+	/*----------------------------PROCESS01 AUTOSLIDESHOWS-------------------------*/
+
+
+		.animStages_column{
+/*			column-count: 3;*/
+		}
+
+/*
+		.process_column_think{
+			column-count: 2;
+			column-width: 300px;
+		}
+*/
+/*--------------------------------------------------------------------------*/
+/*----------------------------WALLY WIPES PAGE-------------------------*/
+/*--------------------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------------------*/
+/*----------------------------MR. YAWNS PAGE-------------------------*/
+/*--------------------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------------------*/
+/*----------------------------RIBBIT RIBBIT STUDIOS SHORT FILM PAGE-------------------------*/
+/*--------------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------------------*/
+/*----------------------------SQUATCHIE'S FOREST PAGE-------------------------*/
+/*--------------------------------------------------------------------------*/
+	/*----------------------------PROCESS 01 WOODPECKER---------------------------------*/
+	.square_woodpecker_size{
+		width:100%;		
+	}
+
+/*--------------------------------------------------------------------------*/
+/*----------------------------TINY ABDUCTIONS PAGE-------------------------*/
+/*--------------------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------------------*/
+/*----------------------------YOUNG TRUNKS PAGE-------------------------*/
+/*--------------------------------------------------------------------------*/
+	.square_size{
+		width: 100%;
+	}
+
+/*------------------------------------------------------------------*/
+/*----------------------------	PENGUIN LOVE----------------------*/
+/*------------------------------------------------------------------*/
+	.penguinImage{
+		width: 100%;
+		height: auto;
+		box-shadow: 0 3px 6px 0 rgba(175,175,175,0.7);
+	}
+
+/*------------------------------------------------------------------*/
+/*----------------------------SLIDESHOWS EXTRA----------------------*/
+/*------------------------------------------------------------------*/
+	/*----------------------------SLIDESHOW2----------------------------*/
+
+		.mySlides2 img {
+			vertical-align: middle;
+		}
+		/* Hide the images by default */
+		.mySlides2 {
+			display: none;
+		}
+		#caption2 {
+			color: white;
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+
+		.slide_demo2{
+			display: none;
+			vertical-align: middle;
+		}
+
+
+	/*------------------------AUTO SLIDESHOW1----------------------------*/
+	/*--------------------------TO THIS DAY------------------------------*/
+
+	.myAutoSlides1{
+		display:none;
+		width: 100%;
+	}
+	/* Container for image text */
+	.auto-caption-container1 {
+		text-align: center;
+		background-color:#ed1970;
+		margin-bottom: 30px;
+		padding: 2% 2%;
+
+	}
+	.auto-caption1 {
+		color: white;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+	/*------------------------AUTO SLIDESHOW2----------------------------*/
+	.myAutoSlides2{
+/*		display:none;*/
+		width: 100%;
+	}
+	/* Container for image text */
+	.auto-caption-container2 {
+		text-align: center;
+		background-color:#ed1970;
+		margin-bottom: 30px;
+		padding: 2% 2%;
+
+	}
+	.auto-caption2 {
+		color: white;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+	/*------------------------AUTO SLIDESHOW2----------------------------*/
+	.myAutoSlides3{
+		display:none;
+		width: 100%;
+	}
+	/* Container for image text */
+	.auto-caption-container3 {
+		text-align: center;
+		background-color:#ed1970;
+		margin-bottom: 30px;
+		padding: 2% 2%;
+
+	}
+	.auto-caption3 {
+		color: white;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+	/*------------------------AUTO SLIDESHOW2----------------------------*/
+	.myAutoSlides4{
+		display:none;
+		width: 100%;
+	}
+	/* Container for image text */
+	.auto-caption-container4 {
+		text-align: center;
+		background-color:#ed1970;
+		margin-bottom: 30px;
+		padding: 2% 2%;
+
+	}
+	.auto-caption4 {
+		color: white;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+	
+/*-----------------EXTRA TEST-------------*/
+.fadein {
+	position:relative;
+	width:500px;
+	height:332px;
+}
+.fadein img { 
+	position:absolute;
+	left:0;
+	top:0;
+}
+
+/*------------------------------------------------------------------*/
+/*----------------------------RESPONSIVE----------------------------*/
+/*------------------------------------------------------------------*/
+
+@media only screen and (min-width:320px)  {
+	/* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
+}
+@media only screen and (min-width:320px)  {
+/*	text fix*/
+/*	portfolio*/
+	/*----------------------------INDEX----------------------------*/
+
+	.longText{
+	font-size: .8em;
+	}
+}
+@media only screen and (min-width:480px)  {
+	/* smartphones, Android phones, landscape iPhone */ 
+	/*porfolio*/
+	
+	/*----------------------------INDEX----------------------------*/
+	.mainTitle {
+		font-size: 1.5em;
+	}
+	.portfolio_text{
+/*		font-size: 1em;*/
+	}
+	.longText{
+		font-size: 1em;
+	}
+			/*----------------------------	WALLY WIPES---------------------------------*/
+			/*----------------------------DEMO-REEL---------------------------------*/	
+
+			.vid-diffRatio-stickerPack{
+				padding-bottom: 110%;
+			}
+		/*----------------------------THINK BRILLIANCE---------------------------------*/
+		/*----------------------------PROCESS 01 ANIMATION  PROCESS-------------------------------*/
+		.animStages_column{
+			column-count: 2;
+		}
+	/*----------------------------SQUATCHIE'S FOREST---------------------------------*/
+		/*----------------------------PROCESS 01 WOODPECKER---------------------------------*/
+		.square_woodpecker_size{
+			width:80%;		
+		}
+
+	
+}
+@media only screen and (min-width:600px)  {
+	/* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ 
+
+	/*----------------------------INDEX----------------------------*/
+	/*	-------nav-------*/
+	nav ol li a img{
+		margin-left: 15%;
+	}
+	.navConfig{
+		transform: translateX(-15%);
+	}
+	/*-----header-----*/
+
+	.description{
+		margin-left: 15%;
+		margin-right: 15%; 
+	}
+
+	/*	---demo-reel-----*/
+	.demoreel-video{
+		width: 70%;
+		height: auto;
+		position: relative;
+		margin: auto;
+	}
+	/*	portfolio	*/
+	.category_item{
+		font-size: .78em;
+		margin: 0 3px;
+	}
+	.grid,
+	.grid > .column {
+    padding: 1.% 1%;
+	}
+
+	.column{
+		width: 30%;
+	}
+	.overlay{
+		width: 91%;
+		height: auto;
+		margin: 4.5% auto;
+
+	}
+	.longText{
+		font-size: .8em;
+	}
+	/*	footer*/
+	.socialMediaIcons a{
+	margin: 0 2px;
+}
+	/*--------	about-------*/
+	.about{
+		grid-template-columns: 50% 50%;
+	}
+	.aboutText{
+		text-align:right;
+	}
+	.btn{
+		display: block;
+		margin: 5%;
+		float: right;
+	}	
+	.aboutImg{
+		display: block;
+	}
+	.aboutImgMobile{
+		display: none;
+	}
+		/*----------------------------PORTFOLIO PAGES----------------------------*/
+	
+		/*	-------slideshow-------*/	
+		.slides_container{
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+/*				width: 90%;*/
+/*			margin-bottom: 50px;*/
+		}
+		/*	-------process-------*/
+		.pic_process{
+			width: 90%;
+		}
+
+		/*	-------festivals-------*/
+
+		.festivals{
+/*				margin: 0 5% 0 10%;*/
+			}
+		/*----------------------------	WALLY WIPES---------------------------------*/
+			/*----------------------------DEMO-REEL---------------------------------*/	
+			#square_width{
+			width:  60%;
+			}
+			.vid-diffRatio-stickerPack{
+				padding-bottom: 100%;
+			}
+		/*----------------------------SQUATCHIE'S FOREST---------------------------------*/
+		/*----------------------------PROCESS 01 WOODPECKER---------------------------------*/
+		.square_woodpecker_size{
+			width:60%;		
+		}
+
+	
+	
+	/*----------------------------	PENGUIN LOVE----------------------*/
+	.index_wrapper-penguin{
+		width: 75%;
+	}
+	/*----------------------------	YOUNG TURKS----------------------*/
+		
+	.square_size{
+		width: 80%;
+	}
+}
+@media only screen and (min-width:701px)  {
+/*	lettering on portfolio mostly*/
+	/*----------------------------WRAPPER----------------------------*/
+	.wrapper{
+		width: 85%;
+	}
+	/*----------------------------INDEX----------------------------*/
+	.portfolio_text{
+		font-size: 1em;
+	}
+		/*----------------------------PORTFOLIO PAGES----------------------------*/
+		/*	-------slideshow-------*/	
+		.slides_container{
+/*				width: 80%;*/
+		}
+		/*	-------process-------*/
+		.pic_process{
+			width: 80%;
+		}
+
+
+		/*	-------festivals-------*/
+
+		.festivals{
+/*			width: 50%;*/
+/*			border: 3px solid green;*/
+/*			padding: 10px;*/
+			}
+		/*----------------------------	WALLY WIPES---------------------------------*/
+			/*----------------------------DEMO-REEL---------------------------------*/	
+			#square_width{
+			width:  50%;
+			}
+			.vid-diffRatio-stickerPack{
+				padding-bottom: 100%;
+			}
+
+		/*----------------------------SQUATCHIE'S FOREST---------------------------------*/
+		/*----------------------------PROCESS 01 WOODPECKER---------------------------------*/
+		.square_woodpecker_size{
+			width:55%;		
+		}
+		/*----------------------------	YOUNG TURKS----------------------*/
+		
+	.square_size{
+		width: 70%;
+	}
+		
+}
+@media only screen and (min-width:801px)  {
+	/* tablet, landscape iPad, lo-res laptops ands desktops */ 
+	/*----------------------------WRAPPER----------------------------*/
+	.wrapper{
+		width: 75%;
+	}
+	/*----------------------------INDEX----------------------------*/
+	/*	-------nav-------*/
+	nav ol li a img{
+		margin-left: 20%;
+	}
+	.navConfig{
+		transform: translateX(-20%);
+	}
+	/*-----header-----*/
+
+	.description{
+		margin-left: 20%;
+		margin-right: 20%; 
+	}
+	/*	---demo-reel-----*/
+	.demoreel-video{
+		width: 60%;
+		height: auto;
+		position: relative;
+		margin: auto;
+	}
+	/* -----portfolio -------*/
+	.portfolio_text{
+		font-size: 1.25em;
+	}
+		/*----------------------------PORTFOLIO PAGES----------------------------*/
+		/*	-------slideshow-------*/	
+		.slides_container{
+/*				width: 70%;*/
+		}
+		/*	-------process-------*/
+		.pic_process{
+			width: 70%;
+		}
+
+
+
+		/*	-------festivals-------*/
+
+		.festivals{
+/*				margin: 0 5% 0 20%;*/
+			}
+		/*	-------credits-------*/
+			/*----------------------------	WALLY WIPES---------------------------------*/
+			/*----------------------------DEMO-REEL---------------------------------*/	
+			#square_width{
+			width:  40%;
+			}
+	
+			.vid-diffRatio-stickerPack{
+				padding-bottom: 90%;
+			}
+		/*----------------------------THINK BRILLIANCE---------------------------------*/
+		/*----------------------------PROCESS 01 ANIMATION  PROCESS-------------------------------*/
+		.top_animStages_column{
+			column-count: 3;
+		}
+		.animStages_column{
+			column-count: 1;
+		}
+
+		/*----------------------------SQUATCHIE'S FOREST---------------------------------*/
+		/*----------------------------PROCESS 01 WOODPECKER---------------------------------*/
+		.square_woodpecker_size{
+			width:50%;		
+		}
+		
+			/*----------------------------	PENGUIN LOVE----------------------*/
+			.index_wrapper-penguin{
+				width: 65%;
+			}
+		/*----------------------------	YOUNG TURKS----------------------*/
+		
+	.square_size{
+		width: 75%;
+	}
+}
+@media only screen and (min-width:1025px) {
+	/* big landscape tablets, laptops, and desktops */ 
+	/*----------------------------WRAPPER----------------------------*/
+	.wrapper{
+		width: 65%;
+	}
+	/*----------------------------INDEX----------------------------*/
+	/*	-------nav-------*/
+	nav ol li a img{
+		margin-left: 25%;
+	}
+	.navConfig{
+		transform: translateX(-25%);
+	}
+	/*-----header-----*/
+
+	.description{
+		margin-left: 25%;
+		margin-right: 25%; 
+	}
+	
+	/*	---demo-reel-----*/
+	.demoreel-video{
+		width: 50%;
+		height: auto;
+		position: relative;
+		margin: auto;
+	}
+	/* -----portfolio -------*/
+	.portfolio_text{
+		font-size: 1.5em;
+	}
+		/*----------------------------PORTFOLIO PAGES----------------------------*/
+			/*	-------slideshow-------*/	
+		.slides_container{
+/*				width: 60%;*/
+		}
+			/*	-------process-------*/
+		.pic_process{
+			width: 60%;
+		}
+
+
+
+		/*	-------festivals-------*/
+
+		.festivals{
+/*				margin: 0 5% 0 25%;*/
+			}
+		/*	-------credits-------*/
+
+			#square_width{
+			width:  35%;
+			}
+		/*----------------------------SQUATCHIE'S FOREST---------------------------------*/
+		/*----------------------------PROCESS 01 WOODPECKER---------------------------------*/
+		.square_woodpecker_size{
+			width:45%;		
+		}
+			/*----------------------------	PENGUIN LOVE----------------------*/
+	.index_wrapper-penguin{
+		width: 55%;
+	}
+}
+@media only screen and (min-width:1281px) {
+	/* hi-res laptops and desktops */ 
+	/*----------------------------WRAPPER----------------------------*/
+	.wrapper{
+		width: 55%;
+	}
+	/*----------------------------INDEX----------------------------*/
+	/*-----portfolio-----*/
+	.grid,
+	.grid > .column {
+    padding: 1.% 1%;
+	}
+
+	.column{
+		width: 22%;
+	}
+	.overlay{
+		width: 88%;
+		height: auto;
+		margin: 6% auto;
+	}
+		/*----------------------------PORTFOLIO PAGES----------------------------*/
+			/*	-------slideshow-------*/	
+		.slides_container{
+/*				width: 50%;*/
+		}
+			/*	-------process-------*/
+		.pic_process{
+			width: 50%;
+		}
+
+
+		/*	-------festivals-------*/
+
+		.festivals{
+/*				margin: 0 5% 0 30%;*/
+			}
+			#square_width{
+			width:  30%;
+			}
+
+}

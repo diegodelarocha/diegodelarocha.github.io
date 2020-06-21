@@ -1,0 +1,263 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<!-- 	Name of the author of the document -->
+	<meta name="Diego De la Rocha" content="Personal Portfolio Website"/>	
+	
+	<title>Diego De la Rocha</title>
+
+	<!--	This is the favicon link-->
+	<link rel="icon" href="/images/favicon/favicon.png" type="image/png">
+
+	<!--	This links the CSS stylesheet-->
+	<link rel="stylesheet" type="text/css" href="main.css">
+
+	<!--	Noto Sans Font Link-->
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i" rel="stylesheet">
+
+
+	<!--	Add Font Awesome for Social Media Icons: Brand y Bold-->
+	<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/brands.js" integrity="sha384-G/XjSSGjG98ANkPn82CYar6ZFqo7iCeZwVZIbNWhAmvCF2l+9b5S21K4udM7TGNu" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+	
+	<!--	Responsive website code-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--	Add jQuery library from Google servers	-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+</head>
+
+<!-- This is the document I'm basing the CSS layout off -->
+<!-- https://xd.adobe.com/spec/0bdf2226-94f2-4db3-7420-acd943763cb0-7dee/screen/032ff7e5-e140-4944-a4fe-29c2b1f2f3d1/iPhone-5-SE-Home/ -->
+
+<body>
+<!----------------------------------------------------------------->
+<!-----------------------NAV GOES HERE----------------------------->
+<!----------------------------------------------------------------->
+	<nav>
+		<ol class="navRectangle">
+			<li><a class="icon" href="index.html">
+				<img src="images/favicon/Favicon_001_White.svg" alt="Diego De la Rocha">
+			</a></li>
+			<div class="navConfig" style="content: none;">
+			<li><a class="navText" href="#about">ABOUT</a></li>
+			<li><a class="navText" href="#portfolio">PORTFOLIO</a></li>
+			<li><a class="navText navActive" href="#">DEMO REEL</a></li>
+			</div>
+		</ol>
+	</nav>
+	
+<!----------------------------------------------------------------->
+<!-----------------------DEMO REEL GOES HERE----------------------->
+<!----------------------------------------------------------------->
+	<div class="colorWrapper" >
+		<div class="demo" id="demoReel">
+			<h1 class="mainTitle">HAND-CRAFTED <br> ANIMATION + ILLUSTRATION</h1>
+			<p class="description">Welcome to my tiny spot on the web, have a hot drink, get cozy and enjoy!</p>
+			
+	<!----------------------------------------------------------------->
+	<!-----------------------VIDEO GOES HERE--------------------------->
+	<!----------------------------------------------------------------->	
+			
+			<div class="demoreel-video">
+				<div class="embed-container">
+					<iframe src="https://player.vimeo.com/video/195262325" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+				</div>
+			</div>
+			
+		</div>
+<!----------------------------------------------------------------->
+<!-----------------------PORTFOLIO STARTS HERE--------------------->
+<!----------------------------------------------------------------->		
+		<div class="index_wrapper">			
+			<a id="portfolio">&nbsp;</a>	
+
+			<div class="portfolioWrapper">
+	<!----------------------------------------------------------------->
+	<!-----------------------FILTER TEXT GOES HERE--------------------->
+	<!----------------------------------------------------------------->	
+				<div class="filterText">
+					<a class="category_item active" id="all" onclick="filterSelection('all')">ALL</a>
+					<a class="category_item" id="hand-drawn" onclick="filterSelection('hand-drawn')">HAND-DRAWN</a>
+					<a class="category_item" id="stop-motion" onclick="filterSelection('stop-motion')">STOP-MOTION</a>
+					<a class="category_item" id="3d" onclick="filterSelection('3d')">3D</a>
+					<a class="category_item" id="illustration" onclick="filterSelection('illustration')">ILLUSTATION</a>
+				</div>
+	<!----------------------------------------------------------------->
+	<!-----------------------PORTFOLIO GRID GOES HERE------------------>
+	<!----------------------------------------------------------------->
+				<div class="grid">
+					<div class="column hand-drawn">
+						<a href="YoungTurks.html" class="portfolio_container">
+							<img src="images/index/YoungTurks.png" alt="Young Turks" class="portfolio">
+								<div class="overlay">
+									<div class="portfolio_text">Young Turks</div>
+								</div>
+						</a>
+					</div>	
+
+					<div class="column 3d">
+						<a href="Acorn.html" class="portfolio_container">
+							<img src="images/index/Acorn.png" alt="Acorn" class="portfolio">
+								<div class="overlay">
+									<div class="portfolio_text">Acorn</div>
+								</div>
+						</a>
+					</div>
+
+
+					<div class="column hand-drawn stop-motion">
+						<a href="TinyAbduction.html" class="portfolio_container">
+							<img src="images/index/TinyAbduction.png" alt="Tiny Abduction" class="portfolio">
+								<div class="overlay">
+									<div class="portfolio_text">Tiny Abduction</div>
+								</div>
+						</a>
+					</div>
+
+					<div class="column illustration">
+						<a href="PenguinLove.html" class="portfolio_container">
+							<img src="images/index/PenguinLove.png" alt="Penguin Love" class="portfolio">
+								<div class="overlay">
+									<div class="portfolio_text">Penguin Love</div>
+								</div>
+						</a>
+					</div>
+
+					<div class="column hand-drawn">
+						<a href="MrYawns.html" class="portfolio_container" >
+							<img src="images/index/MrYawns.png" alt="Mr. Yawns" class="portfolio">
+							<div class="overlay">
+								<div class="portfolio_text">Mr. Yawns</div>
+							</div>
+						</a>
+					</div>
+					
+					<div class="column hand-drawn">
+						<a href="WallyWipes.html" class="portfolio_container">
+							<img src="images/index/WallyWipes.png" alt="Wally Wipes" class="portfolio">
+							<div class="overlay">
+								<div class="portfolio_text">Wally Wipes</div>
+							</div>
+
+						</a>
+					</div>
+
+					<div class="column hand-drawn illustration">
+						<a href="SquatchiesForest.html" class="portfolio_container">
+							<img src="images/index/SquatchiesForest.png" alt="Squatchie's Forest" class="portfolio">
+								<div class="overlay">
+								<div class="portfolio_text">Squatchie's Forest</div>
+							</div>
+						</a>
+					</div>
+					<div class="column stop-motion">
+						<a href="RibbitRibbitStudiosShortFilm.html" class="portfolio_container">
+							<img src="images/index/RibbitRibbitStudiosShort-Film.png" alt="Ribbit Ribbit Studios' Short-Film" class="portfolio">
+								<div class="overlay">
+									<div class="portfolio_text longText">Ribbit Ribbit Studios' Short-Film</div>
+								</div>
+						</a>
+					</div>
+					<div class="column hand-drawn">
+						<a href="ToThisDay.html" class="portfolio_container">
+							<img src="images/index/ToThisDay.png" alt="To This Day" class="portfolio">
+								<div class="overlay">
+									<div class="portfolio_text">To This Day</div>
+								</div>
+						</a>
+					</div>
+					<div class="column 3d">
+						<a href="ThinkBrilliance.html" class="portfolio_container">
+							<img src="images/index/ThinkBrilliance.png" alt="Think Brilliance" class="portfolio">
+								<div class="overlay">
+									<div class="portfolio_text">Think Brilliance</div>
+								</div>
+						</a>
+					</div>
+					
+
+				</div>
+			</div>
+		</div>
+	</div>
+	
+<!----------------------------------------------------------------->
+<!-----------------------ABOUT GOES HERE--------------------------->
+<!----------------------------------------------------------------->
+			<a id="about"></a>	
+			<div class="about">
+				<div class="aboutLeft">
+	<!----------------------------------------------------------------->
+	<!-----------------------ABOUT TEXT GOES HERE--------------------->
+	<!----------------------------------------------------------------->
+					<p class="aboutText">Hola, Nice to meet you! I love <b>captivating </b> and <b>quirky characters</b> in any medium... also, I'm a sucker for cute :3</p>
+					
+					<p class="aboutText">When I'm not exploring newly crafted stories, I enjoy taking pictures, goaltending on ice-hockey, and getting lost in nature with friends.
+					
+					<p class="aboutText"><b>Love + Happiness to you <3!</b></p>
+					
+	<!----------------------------------------------------------------->
+	<!-----------------------ABOUT BUTTON GOES HERE--------------------->
+	<!----------------------------------------------------------------->		
+					<div>
+						<a href="/assets/diegodelarocha_animator_artdirector_resume.pdf" target="_blank">
+							<button class="btn" type="button" onclick="">RÉSUMÉ</button>	
+						</a>
+					</div>
+				</div>
+
+	<!----------------------------------------------------------------->
+	<!-----------------------ABOUT IMAGE GOES HERE--------------------->
+	<!----------------------------------------------------------------->
+				<div class="aboutRight">
+					<div class="aboutImg" alt="aboutImg"></div>
+				</div>
+			</div>
+	<!-----------------------MOBILE IMAGE GOES HERE------------------->
+		<div class="aboutImgMobile"></div>
+
+<!----------------------------------------------------------------->
+<!-----------------------FOOTER GOES HERE-------------------------->
+<!----------------------------------------------------------------->
+			
+	<footer>
+		<div class="socialMediaIcons">
+			<a href="https://www.linkedin.com/in/diegodelarocha/" target="_blank">
+				<i class="fab fa-linkedin-in fa-fw SocialIcon"></i>
+			</a>
+			<a href="https://www.vimeo.com/diegodelarocha/" target="_blank">
+				<i class="fab fa-vimeo-v fa-fw SocialIcon"></i>
+			</a>
+			<a href="https://www.instagram.com/diegodelarocha/" target="_blank">
+				<i class="fab fa-instagram fa-fw SocialIcon"></i>
+			</a>
+			<a href="https://www.twitter.com/diegodelarocha/" target="_blank">
+				<i class="fab fa-twitter fa-fw SocialIcon"></i>
+			</a>
+			<!-- <a href="https://diegodelarocha.tumblr.com" target="_blank">
+				<i class="fab fa-tumblr fa-fw SocialIcon"></i>
+			</a> -->
+			<a href="https://behance.net/diegodelarocha/" target="_blank">
+				<i class="fab fa-behance fa-fw SocialIcon"></i>
+			</a>
+			<a href="mailto:hi@diegodelarocha.com" target="_blank">
+				<i class="fas fa-envelope fa-fw SocialIcon"></i>
+			</a>
+			
+		</div>
+			<ul class="footerText">
+				<li><a href="mailto:hi@diegodelarocha.com" target="_blank" class="linkText">hi@DiegoDelaRocha.com</a></li>
+				<li><a href="tel:+17783193491" class="linkText">+1 (778) 319-3491</a></li>
+				<li class="textStyleFooter paddingFooter"><b>VANCOUVER, BC, CANADA</b></li>
+				<li class="textStyleFooter paddingFooter">© 2011 - 2020 Copyright <b>DIEGO DE LA ROCHA</b></li>
+			</ul>
+	</footer>
+	<!--	JavaScript link-->
+<script src="scripts/main.js"></script>
+</body>
+</html>
+

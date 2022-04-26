@@ -191,6 +191,9 @@ html{
 	.vid-diffRatio-turk{
 			padding-bottom: 100%;
 	}
+	.vid-diffRatio-pig{
+		padding-bottom: 66.666667%; /* 1000px/1500px */
+	}
 
 
 	/*--------------------------------------------------------------*/
@@ -785,6 +788,7 @@ html{
 
 
 		.animStages_column{
+			width: 91.304348%; /* 21px/23px */
 /*			column-count: 3;*/
 		}
 

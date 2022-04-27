@@ -194,6 +194,9 @@ html{
 	.vid-diffRatio-pig{
 		padding-bottom: 66.666667%; /* 1000px/1500px */
 	}
+	.vid-diffRatio-froggie{
+		padding-bottom: 74.25%; /* 972px/1440px ish it was not exact but close */
+	}
 
 
 	/*--------------------------------------------------------------*/

@@ -866,6 +866,25 @@ html{
 			display: none;
 			vertical-align: middle;
 		}
+	/*----------------------------SLIDESHOW3----------------------------*/
+
+		.mySlides3 img {
+			vertical-align: middle;
+		}
+		/* Hide the images by default */
+		.mySlides3 {
+			display: none;
+		}
+		#caption3 {
+			color: white;
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+
+		.slide_demo3{
+			display: none;
+			vertical-align: middle;
+		}
 
 
 	/*------------------------AUTO SLIDESHOW1----------------------------*/

@@ -1,13 +1,15 @@
 // JavaScript Document
 
-var slideIndex = [1,1];
-var slideId= ["mySlides1", "mySlides2"];
-var slide_demoId= ["slide_demo1","slide_demo2"];
-var captionId= ["caption1","caption2"];
+var slideIndex = [1,1,1]; //If you want to add a new slide, make sure to add an extra index number here so that the logic knows where to start, example for four would be [1,1,1,1]
+var slideId= ["mySlides1", "mySlides2", "mySlides3"];
+var slide_demoId= ["slide_demo1","slide_demo2", "slide_demo3"];
+var captionId= ["caption1","caption2","caption3"];
 //Slide1 
 showSlides(1, 0);
 //Slide2 
 showSlides(1, 1); 
+//Slide3 
+showSlides(1, 2); 
 
 function plusSlides(n, no) {
   showSlides(slideIndex[no] += n, no);
@@ -37,20 +39,27 @@ function showSlides(n, no) {
 
 
 
+
+
+
+
+
+
+
 //// Original 1 slide Code Below
-//
-//var slideIndex = 1;
-//showSlides(slideIndex);
-//
-//function plusSlides(n) {
+
+// var slideIndex = 1;
+// showSlides(slideIndex);
+
+// function plusSlides(n) {
 //  showSlides(slideIndex += n);
-//}
-//
-//function currentSlide(n) {
+// }
+
+// function currentSlide(n) {
 //  showSlides(slideIndex = n);
-//}
-//
-//function showSlides(n) {
+// }
+
+// function showSlides(n) {
 //  var i;
 //  var slides = document.getElementsByClassName("mySlides");
 //  var dots = document.getElementsByClassName("slide_demo");
@@ -66,4 +75,3 @@ function showSlides(n, no) {
 //  slides[slideIndex-1].style.display = "block";
 //  dots[slideIndex-1].className += " active";
 //  captionText.innerHTML = dots[slideIndex-1].alt;
-//}

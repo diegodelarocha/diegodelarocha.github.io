@@ -191,6 +191,12 @@ html{
 	.vid-diffRatio-turk{
 			padding-bottom: 100%;
 	}
+	.vid-diffRatio-pig{
+		padding-bottom: 66.666667%; /* 1000px/1500px */
+	}
+	.vid-diffRatio-froggie{
+		padding-bottom: 74.25%; /* 972px/1440px ish it was not exact but close */
+	}
 
 
 	/*--------------------------------------------------------------*/
@@ -785,6 +791,7 @@ html{
 
 
 		.animStages_column{
+			width: 91.304348%; /* 21px/23px */
 /*			column-count: 3;*/
 		}
 
@@ -856,6 +863,25 @@ html{
 		}
 
 		.slide_demo2{
+			display: none;
+			vertical-align: middle;
+		}
+	/*----------------------------SLIDESHOW3----------------------------*/
+
+		.mySlides3 img {
+			vertical-align: middle;
+		}
+		/* Hide the images by default */
+		.mySlides3 {
+			display: none;
+		}
+		#caption3 {
+			color: white;
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+
+		.slide_demo3{
 			display: none;
 			vertical-align: middle;
 		}

@@ -16,7 +16,7 @@ html{
 	font-family: 'Noto Sans', sans-serif;
 }
 .colorWrapper{
-	background-color: #e1c8eb50;
+	background-color: #ebdaee50;
 }
 .index_wrapper{
 	width: 90%;
@@ -35,7 +35,7 @@ html{
 /*	main titles*/
 	h1 {
 		font-size: 1.25em;
-		color: #8961ad;
+		color: #e4659a;
 		font-weight: bold;
 		text-align: center;
 		text-transform: uppercase;
@@ -44,18 +44,19 @@ html{
 /*	subtitles*/
 	h2 {
 		font-size: 1em;
-		color: #8961ad;
+		color: #e4659a;
 		font-weight: bold;
 		text-align: center;
 		text-transform: uppercase;
 	}
 	p {
 		font-size: 1em;
-		color: #8961adb5;
+		color: #c77dc4c8;
+		/* color: #a88aca; */
 		font-weight: normal;
 	}
 	b{
-		color: #8961ad;
+		color: #e4659a;
 	}
 	ul{
 		list-style-type: none;
@@ -71,7 +72,7 @@ html{
 		text-align: center;
 	}
 	.linkTextAll{
-		color: #ed198e;
+		color: #eda219;
 		font-weight: bold;
 	}
 
@@ -95,7 +96,7 @@ html{
 		margin: 0;
 		padding: 0;
 		overflow: hidden;
-		background-color:#8961ad;
+		background-color:#c77dc5;
 		width: 100%;
 		height:50px;
 	}
@@ -117,7 +118,7 @@ html{
 	}
 
 	.navText:hover:not(.target) {
-		background-color: #ed198e;
+		background-color: #eda219;
 /*		font-size: .7em;*/
 		color:rgba(255,255,255,1);
 		
@@ -217,12 +218,12 @@ html{
 			text-decoration: none;
 			font-weight: bold;
 			font-size: .67em;
-			color: #8961ad7d;
+			color: #c77dc57d;
 			margin: 0 1px;
 		}
 
 		.category_item:hover, .active{
-			color:#ed198e;
+			color:#eda219;
 			font-weight:bold;
 		}
 		/*--------------------------PORTFOLIO GRID-------------------------*/
@@ -279,8 +280,8 @@ html{
 			margin: 3% auto;
 			padding: 0;
 			transition: all 0.2s ease-in-out;
-			/* background-color:#ed198e; */
-			background-color:#ed198e;
+			/* background-color:#eda219; */
+			background-color:#eda219;
 
 		}
 		.potfolio_container:active .overlay{
@@ -326,7 +327,7 @@ html{
 	}
 	.about {
 		box-sizing: inherit;
-		background-color: #e1c8eb18;
+		background-color: #ebdaeee9;
 		z-index: 3; 
 		display: grid;
 		grid-template-columns: 100% 0%;
@@ -363,9 +364,9 @@ html{
 		box-sizing: border-box;
 		outline: none;
 		padding: 10px 30px;
-		border: 2.5px solid #ed198e;
+		border: 2.5px solid #eda219;
 		cursor: pointer;
-		color:#ed198e;
+		color:#eda219;
 		font-weight: bold;
 		border-radius: 8px;
 		font-size: .8em;
@@ -376,14 +377,14 @@ html{
 	}
 	/* Add a grey background color on mouse-over */
 	.btn:hover {
-		background-color: #ed198e;
+		background-color: #eda219;
 		color: #ffffff;
 	/*	transform: scale(1.05);*/
 	}
 
 	/* Add a dark background color to the active button */
 	.btn:active {
-		background-color: #ed198e;
+		background-color: #eda219;
 		color: white;
 	/*	transform: scale(.95);*/
 	}
@@ -397,7 +398,7 @@ html{
 		margin: 0 auto;
 		width: 100%;
 		padding: 30px 0;
-		background-color: #8961ad;
+		background-color: #c77dc5;
 		z-index: -2; 
 		box-shadow: inset 0 3px 6px 0 rgba(0,0,0,.15);
 	}
@@ -471,7 +472,7 @@ html{
 		margin: 0;
 		padding: 0;
 		overflow: hidden;
-		background-color:#8961ad;
+		background-color:#c77dc5;
 		width: 100%;
 		height:50px;
 	}
@@ -538,11 +539,11 @@ html{
 		/* On hover, add a black background color with a little bit see-through */
 		.prev:hover,
 		.next:hover {
-			background-color: #ed198e;
+			background-color: #eda219;
 		}
 		.prev:active,
 		.next:active {
-			background-color: #ed198e;
+			background-color: #eda219;
 		}
 
 		/* Number text (1/3 etc) */
@@ -560,7 +561,7 @@ html{
 		/* Container for image text */
 		.caption-container {
 			text-align: center;
-			background-color:#ed198e;
+			background-color:#eda219;
 			padding: 2% 2%;
 		}
 		#caption1 {
@@ -684,7 +685,7 @@ html{
 		.festivalText{
 			display: inline;
 /*			text-transform: uppercase;*/
-			color: #8961ad;
+			color: #c77dc5;
 			color:#afafaf;
 /*			font-weight: bold;*/
 			font-size: .8em;
@@ -696,12 +697,12 @@ html{
 			font-size: .8em;
 		}
 		.festivalLink:hover{
-			color: #ed198e;
+			color: #eda219;
 			font-weight: bold;
 			font-size: .85em;
 		}
 		.festivalLink:active{
-			color:#ed198e;
+			color:#eda219;
 			font-size: .78em;
 		}
 
@@ -729,7 +730,7 @@ html{
 		.creditText{
 			display: inline;
 			text-transform: uppercase;
-			color: #8961ad;
+			color: #c77dc5;
 			color:#afafaf;
 			font-weight: bold;
 			font-size: .8em;
@@ -741,12 +742,12 @@ html{
 			font-size: .8em;
 		}
 		.creditLink:hover{
-			color: #ed198e;
+			color: #eda219;
 			font-weight: bold;
 /*			font-size: .85em;*/
 		}
 		.creditLink:active{
-			color:#ed198e;
+			color:#eda219;
 			font-size: .78em;
 		}
 
@@ -759,9 +760,9 @@ html{
 			box-sizing: border-box;
 			outline: none;
 			padding: 10px 30px;
-			border: 2.5px solid #ed198e;
+			border: 2.5px solid #eda219;
 			cursor: pointer;
-			color:#ed198e;
+			color:#eda219;
 			font-weight: bold;
 			border-radius: 8px;
 			font-size: .8em;
@@ -772,14 +773,14 @@ html{
 		}
 		/* Add a grey background color on mouse-over */
 		.btnBack:hover {
-			background-color: #ed198e;
+			background-color: #eda219;
 			color: #ffffff;
 		/*	transform: scale(1.05);*/
 		}
 
 		/* Add a dark background color to the active button */
 		.btnBack:active {
-			background-color: #ed198e;
+			background-color: #eda219;
 			color: white;
 		/*	transform: scale(.95);*/
 		}
@@ -898,7 +899,7 @@ html{
 	/* Container for image text */
 	.auto-caption-container1 {
 		text-align: center;
-		background-color:#ed198e;
+		background-color:#eda219;
 		margin-bottom: 30px;
 		padding: 2% 2%;
 
@@ -916,7 +917,7 @@ html{
 	/* Container for image text */
 	.auto-caption-container2 {
 		text-align: center;
-		background-color:#ed198e;
+		background-color:#eda219;
 		margin-bottom: 30px;
 		padding: 2% 2%;
 
@@ -934,7 +935,7 @@ html{
 	/* Container for image text */
 	.auto-caption-container3 {
 		text-align: center;
-		background-color:#ed198e;
+		background-color:#eda219;
 		margin-bottom: 30px;
 		padding: 2% 2%;
 
@@ -952,7 +953,7 @@ html{
 	/* Container for image text */
 	.auto-caption-container4 {
 		text-align: center;
-		background-color:#ed198e;
+		background-color:#eda219;
 		margin-bottom: 30px;
 		padding: 2% 2%;
 

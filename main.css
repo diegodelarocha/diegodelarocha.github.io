@@ -25,6 +25,7 @@ html{
 .wrapper{
 	width: 90%;	
 	margin: 0 auto;
+	/* background-color: #ebdaee50; */
 }
 .index_wrapper-penguin{
 	width: 100%;
@@ -327,7 +328,7 @@ html{
 	}
 	.about {
 		box-sizing: inherit;
-		background-color: #ebdaeee9;
+		/* background-color: #ebdaeee9; */
 		z-index: 3; 
 		display: grid;
 		grid-template-columns: 100% 0%;

@@ -34,6 +34,11 @@ html{
 
 	/*------------------------TEXT STYLING----------------------------*/
 /*	main titles*/
+	h3{
+		font-family: 'Pacifico', cursive;
+		color: black;
+	}
+
 	h1 {
 		font-size: 1.25em;
 		color: #e4659a;
@@ -147,11 +152,16 @@ html{
 	/*--------------------------------------------------------------*/
 	/*-------------------------HEADER TEXT--------------------------*/
 	/*--------------------------------------------------------------*/
-
+	
 	.mainTitle{
 		margin-bottom: 15px;
 		margin-top: 50px;
 		padding-top: 15px
+	}
+	.handCrafted{
+		font-size: 3.5em;
+		text-align: center;
+		 margin-bottom: -95px;
 	}
 	.description{
 		text-align: center;
@@ -1001,6 +1011,8 @@ html{
 	.mainTitle {
 		font-size: 1.5em;
 	}
+	.handCrafted{
+		font-size: 3.8em;
 	.portfolio_text{
 /*		font-size: 1em;*/
 	}
